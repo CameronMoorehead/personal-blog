@@ -9,14 +9,24 @@
 
 <body <?php body_class(); ?>>
 
-    <div class="container">
 
         <!-- site-header -->
-        <header class="site-header">
-            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-            <h5><?php bloginfo('description'); ?></h5>
+        <header class="site-header clearfix">
 
-            <nav class="site-nav">
+            <div id="site_image">
+                <image src="<?php bloginfo('stylesheet_directory');
+
+            ?>/images/atom.png" width="90" height="90" title="atom" />
+
+            </div>
+
+            <h1><a href="<?php echo home_url(); ?>">CAMERON<br>MOOREHEAD</a></h1>
+
+            <div id="header_description">
+                <h2><?php bloginfo('description'); ?></h2>
+            </div>
+
+            <nav class="site-nav clearfix">
 
                 <?php 
 
@@ -30,4 +40,6 @@
             </nav>            
 
         </header>
+
+    <div class="container">
         <!-- /site-header -->
