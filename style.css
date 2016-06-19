@@ -22,14 +22,17 @@ p {
 /* General Layout */
 div.container {
     max-width: 920px;
+    width: 80%;
     margin: 0 auto;
 }
 
-article.post:first-of-type {
+/* -- Main Blog Feed Styles -- */
+
+body.home article.post:first-of-type {
     margin-top: 10em;
 }
 
-article.post {
+body.home article.post {
     border-radius: 5px;
     background: white;
     padding: 20px;
@@ -39,12 +42,34 @@ article.post {
     border-left: 8px solid #95497A;
 }
 
+/* -- Individual Blog Post Styles */
+
+body.single-post article.post {
+    padding: 20px;
+    margin-top: 6em;
+}
+
+body.single-post div.container {
+    background: white;
+}
+
+/* -- Individual Page Styles -- */
+
 body.page-id-2 article.post {
     border-left: 8px solid #0092b7;
 }
 
 body.page-id-6 article.post {
     border-left: 8px solid #C14242; 
+}
+
+body.page article.post {
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+    box-shadow; 0 5px 5px -3px #606060;
+    margin-bottom: 2em;
+    margin-top: 10em;
 }
 
 article.post h2 a {
