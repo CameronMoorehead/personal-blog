@@ -6,9 +6,9 @@ Version: 1.0
 */
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     color: #333;
+    background-color: #eeeeee;
 }
 
 a {
@@ -23,29 +23,58 @@ p {
 div.container {
     max-width: 920px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+article.post:first-of-type {
+    margin-top: 10em;
 }
 
 article.post {
-    border-bottom: 2px dotted #bbbbbb;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 5px -3px #606060;
+    margin-bottom: 2em;
+    margin-top: 3em;
+    border-left: 8px solid #95497A;
 }
 
-article.post:last-of-type {
-    border-bottom: none;
+body.page-id-2 article.post {
+    border-left: 8px solid #0092b7;
+}
+
+body.page-id-6 article.post {
+    border-left: 8px solid #C14242; 
+}
+
+article.post h2 a {
+    text-transform: uppercase;
+    font-size: 1.625rem;
+    letter-spacing: -1px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
 }
 
 /* Header */
 
 .site-header {
-    background-color: lightgrey;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 5px -3px #606060;
 }
 
 #header_description {
+    color: #95397A;
     font-size: 16px;
     position: fixed;
-    top: 4em;
+    top: 3.5em;
     margin-left: 6.8em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
 #site_image {
@@ -87,6 +116,9 @@ article.post:last-of-type {
     padding: 2.5em 4em;
     border-bottom: none;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
 .site-header h1,
@@ -96,6 +128,10 @@ article.post:last-of-type {
     font-size: 28px;
     text-decoration: none;
     float: left;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: black;
+    line-height: 1em;
 }
 
 .site-header nav ul li a:hover {
@@ -104,8 +140,28 @@ article.post:last-of-type {
 
 .site-header nav ul li.current-menu-item a:link,
 .site-header nav ul li.current-menu-item a:visited {
-    background-color: #006ec3;
     color: white;
+    opacity: 0.9;
+}
+
+
+
+.site-header nav ul li.current-menu-item:nth-child(2n+1) a:link,
+.site-header nav ul li.current-menu-item:nth-child(2n+1) a:visited {
+    color: white;
+    background: #95397A; 
+}
+
+.site-header nav ul li.current-menu-item:nth-child(2n+0) a:link,
+.site-header nav ul li.current-menu-item:nth-child(2n+0) a:visited {
+    color: white;
+    background: #0092b7;
+}
+
+.site-header nav ul li.current-menu-item:nth-child(3n+1) a:link,
+.site-header nav ul li.current-menu-item:nth-child(3n+1) a:visited {
+    color: white;
+    background: #C14242; 
 }
 
 /* Site Footer Menu */
