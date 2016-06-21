@@ -35,7 +35,7 @@ body.home article.post:first-of-type {
 body.home article.post {
     border-radius: 5px;
     background: white;
-    padding: 20px;
+    padding: 1em 3em 2em;
     box-shadow: 0 5px 5px -3px #606060;
     margin-bottom: 2em;
     margin-top: 3em;
@@ -51,6 +51,14 @@ body.single-post article.post {
 
 body.single-post div.container {
     background: white;
+}
+
+body.single-post article.post h2 a {
+    font-size: 2rem;
+}
+
+p.post-info {
+    margin-bottom: 0px;
 }
 
 /* -- Individual Page Styles -- */
@@ -79,6 +87,10 @@ article.post h2 a {
     font-weight: 800;
     text-decoration: none;
     color: black;
+}
+
+article.post h2 {
+    margin-top: 0px;
 }
 
 /* Header */
@@ -200,4 +212,16 @@ article.post h2 a {
 /* Page Layout */
 article.page h2 {
     font-size: 200%;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    body {
+    }
 }
