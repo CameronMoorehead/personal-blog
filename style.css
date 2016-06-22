@@ -244,9 +244,12 @@ img {
         /* give the individual elements style as if they were clicked; hide if input not check */
         width: 99%;
         display: inline-block;
-        background-color: #2c2c2c;
         color: white;
         padding: 1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #2c2c2c;
+        font-weight: 800;
     }
 
     .mobile-nav ul li {
@@ -257,4 +260,36 @@ img {
     .mobile-nav ul {
         padding: 7em 0 10px 0;
     }
+
+    .menu-btn {
+        background: none;
+        border-radius: 15px;
+        border: solid;
+        outline: none;
+    }
+    
+    .menu-btn:hover {
+        box-shadow: 1px 1px 20px #95397A;
+    }
+
+    .menu-btn:active {
+        background: #95397A;
+    }
+
+    .mobile-nav ul li:nth-child(1) a {
+        color: red;
+    }
+
+    .mobile-nav ul li:nth-child(2) a {
+        color: purple;
+    }
+
+    .mobile-nav ul li:nth-child(3) a {
+        color: pink;
+    }
+
+    .mobile-nav ul li a:hover {
+        color: white;
+    }
+
 }

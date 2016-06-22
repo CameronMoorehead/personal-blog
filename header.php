@@ -41,16 +41,11 @@
             </nav>            
 
             <div class="mobile-nav">
-                <div class="menu-btn" id="menu-btn">
-                    <div id="mini-nav-image">
-                        <image src="<?php bloginfo('stylesheet_directory');
-                        ?>/images/hamburger.png" width="70" height="70" title="mini-nav" />
-                    </div>
-                    <div></div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <button class="menu-btn" id="mini-nav-image">
+                    <image src="<?php bloginfo('stylesheet_directory');
+                    ?>/images/hamburger.png" width="70" height="70" title="mini-nav" />
+                </button>
+
                 <div class="responsive-menu">
                     <?php wp_nav_menu( array(
                         'container_class' => 'mobile-nav',
