@@ -101,6 +101,7 @@ article.post h2 {
     width: 100%;
     background-color: white;
     box-shadow: 0 5px 5px -3px #606060;
+    height: 120px;
 }
 
 #header_description {
@@ -118,6 +119,12 @@ article.post h2 {
     margin-left: 8px;
     margin-top: 8px;
     float: left;
+}
+
+#mini-nav-image {
+    position: absolute;
+    right: 2em;
+    top: 1em;
 }
 
 /* Footer */
@@ -150,7 +157,7 @@ article.post h2 {
 .site-header nav ul li a:visited {
     font-size: 18px;
     display: block;
-    padding: 2.5em 4em;
+    padding: 2.7em 4em;
     border-bottom: none;
     text-decoration: none;
     text-transform: uppercase;
@@ -178,7 +185,6 @@ article.post h2 {
 .site-header nav ul li.current-menu-item a:link,
 .site-header nav ul li.current-menu-item a:visited {
     color: white;
-    opacity: 0.9;
 }
 
 
@@ -219,9 +225,36 @@ img {
     max-width: 100%;
 }
 
+
+
 /* Media Queries */
+@media screen and (min-width: 1000px) {
+    .mobile-nav {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1000px) {
-    body {
+
+    .site-nav {
+        display: none;
+    }
+
+    .mobile-nav ul li a {
+        /* give the individual elements style as if they were clicked; hide if input not check */
+        width: 99%;
+        display: inline-block;
+        background-color: #2c2c2c;
+        color: white;
+        padding: 1em;
+    }
+
+    .mobile-nav ul li {
+        list-style: none;
+        padding-top: 2px;
+    }
+
+    .mobile-nav ul {
+        padding: 7em 0 10px 0;
     }
 }

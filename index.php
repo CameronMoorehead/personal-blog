@@ -7,10 +7,14 @@ if (have_posts()) :
 
     <article class="post">
 
+
+
+
         <p class="post-info"><?php the_time('m/d/y'); ?></p>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-        <?php the_post_thumbnail('small-thumbnail'); ?>
+        <?php the_post_thumbnail('small-thumbnail'); ?> 
+
         
         <?php if ($post->post_excerpt) { ?>
 
@@ -24,6 +28,7 @@ if (have_posts()) :
         the_content();
 
         } ?>
+
             </article>
     
     <?php endwhile; ?>
