@@ -4,6 +4,12 @@ function blog_resources() {
 
     wp_enqueue_style('style', get_stylesheet_uri());
 
+    wp_register_script('custom-script',
+                        get_template_directory_uri() .
+                        '/js/mininav_toggle.js',
+                        array('jquery', 'jquery-ui-core'));
+    wp_enqueue_script('custom-script');
+
 }
 
 add_action('wp_enqueue_scripts', 'blog_resources');
@@ -41,3 +47,4 @@ function blog_setup() {
 }
 
 add_action('after_setup_theme', 'blog_setup');
+
