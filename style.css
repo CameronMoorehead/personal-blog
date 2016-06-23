@@ -22,7 +22,7 @@ p {
 /* General Layout */
 div.container {
     max-width: 920px;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -228,13 +228,40 @@ img {
 
 
 /* Media Queries */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 770px) {
     .mobile-nav {
         display: none;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
+
+    .site-header nav ul li a:link,
+    .site-header nav ul li a:visited {
+        padding: 2.7em 2em;
+    }
+
+    div.container {
+        width: 90%;
+    }
+
+    /* Edit single posts still */
+     body.home article.post:first-of-type {
+        margin-top: 9em;
+    }
+
+    body.single-post article.post {
+        padding: 20px;
+        margin-top: 6em;
+    }
+
+    body.home article.post {
+        padding: 0.5em 3em 1.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+@media screen and (max-width: 770px) {
 
     .site-nav {
         display: none;
@@ -299,4 +326,13 @@ img {
         color: white;
     }
 
+    body.single-post article.post {
+        padding: 20px;
+        margin-top: 6em;
+    }
+
+    div.container {
+        width: 99%;
+    }
+    
 }
