@@ -14,11 +14,13 @@ if (have_posts()) :
 
 
         <?php the_content(); ?>
+
     </article>
 
-    <?php endwhile;
 
-    else :
+    <?php endwhile; ?>
+
+    <?php else :
         echo '<p>No content found</p>';
 
     endif;

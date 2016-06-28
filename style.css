@@ -5,218 +5,107 @@ Author URI: http://www.cameronmoorehead.com
 Version: 1.0
 */
 
+
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    background-color: #eeeeee;
+    font: 150%/1.6 "Droid Serif", serif;
+    font-weight: 400;
+    padding: 1em;
+    margin: 0 auto;
+    color: #282828;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1em;
 }
 
 a {
-    color: #006ec3;
-}
-
-p {
-    line-height: 1.65em;
-}
-
-/* General Layout */
-div.container {
-    max-width: 920px;
-    width: 85%;
-    margin: 0 auto;
-}
-
-/* -- Main Blog Feed Styles -- */
-
-body.home article.post:first-of-type {
-    margin-top: 10em;
-}
-
-body.home article.post {
-    border-radius: 5px;
-    background: white;
-    padding: 1em 3em 2em;
-    box-shadow: 0 5px 5px -3px #606060;
-    margin-bottom: 2em;
-    margin-top: 3em;
-    border-left: 8px solid #95497A;
-}
-
-/* -- Individual Blog Post Styles */
-
-body.single-post article.post {
-    padding: 20px;
-    margin-top: 6em;
-}
-
-body.single-post div.container {
-    background: white;
-}
-
-body.single-post article.post h2 a {
-    font-size: 2rem;
-}
-
-p.post-info {
-    margin-bottom: 0px;
-}
-
-/* -- Individual Page Styles -- */
-
-body.page-id-2 article.post {
-    border-left: 8px solid #0092b7;
-}
-
-body.page-id-6 article.post {
-    border-left: 8px solid #C14242; 
-}
-
-body.page article.post {
-    border-radius: 5px;
-    background: white;
-    padding: 20px;
-    box-shadow; 0 5px 5px -3px #606060;
-    margin-bottom: 2em;
-    margin-top: 10em;
-}
-
-article.post h2 a {
-    text-transform: uppercase;
-    font-size: 1.625rem;
-    letter-spacing: -1px;
-    font-weight: 800;
     text-decoration: none;
     color: black;
 }
 
-article.post h2 {
-    margin-top: 0px;
+/* General Layout */
+
+div.container {
+    max-width: 750px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+article.post {
+}
+
+/* -- Main Blog Feed Styles -- */
+
+body.home article.post {
+    border-bottom: thin solid black;
 }
 
 /* Header */
 
+#name-tag {
+    height: 6.5em;
+    width: 6em;
+    background-color: #282828;
+    padding: 0.5em;
+}
+
+#name-tag a {
+    color: white;
+}
+
 .site-header {
-    top: 0px;
-    position: fixed;
+    display: inline-flex;
     width: 100%;
-    background-color: white;
-    box-shadow: 0 5px 5px -3px #606060;
-    height: 120px;
 }
 
-#header_description {
-    color: #95397A;
-    font-size: 16px;
-    position: fixed;
-    top: 3.5em;
-    margin-left: 6.8em;
-    font-weight: 800;
-    letter-spacing: -1px;
-    text-transform: uppercase;
+.site-nav {
+    width: 100%;
 }
 
-#site_image {
-    margin-left: 8px;
-    margin-top: 8px;
-    float: left;
-}
-
-#mini-nav-image {
-    position: absolute;
-    right: 2em;
-    top: 1em;
-}
 
 /* Footer */
 
 .site-footer {
     margin-top: 30px;
-    border-top: 2px solid #999;
 }
 
 /* Navigation Menus */
-.site-nav ul {
-    margin: 0;
-    padding: 0;
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1.5em;
 }
 
-.clearfix ul:before, .site-nav ul:after { content: ""; display: table; }
-.clearfix ul:after { clear: both; }
-.clearfix ul { *zoom: 1; }
 
 .site-nav ul li {
     list-style: none;
-    float: right;
+    display: inline;
+    margin-right: 1.5em;
 }
 
-/* Site Header Menu */
 
-.site-header nav ul li a:link,
-.site-header nav ul li a:visited {
-    font-size: 18px;
-    display: block;
-    padding: 2.7em 4em;
-    border-bottom: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: -1px;
+
+.site-nav h2 {
+    font-size: 24px;
 }
 
-.site-header h1,
-.site-header h1 a {
-    margin-top: 5px;
-    margin-left: 5px;
-    font-size: 28px;
-    text-decoration: none;
-    float: left;
-    font-weight: 800;
-    letter-spacing: -1px;
-    color: black;
-    line-height: 1em;
-}
-
+/* !!!! change this for more specificity !!! */
 .site-header nav ul li a:hover {
     background-color: #ECECEC;
 }
 
-.site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited {
-    color: white;
-}
-
-
-
-.site-header nav ul li.current-menu-item:nth-child(2n+1) a:link,
-.site-header nav ul li.current-menu-item:nth-child(2n+1) a:visited {
-    color: white;
-    background: #95397A; 
-}
-
-.site-header nav ul li.current-menu-item:nth-child(2n+0) a:link,
-.site-header nav ul li.current-menu-item:nth-child(2n+0) a:visited {
-    color: white;
-    background: #0092b7;
-}
-
-.site-header nav ul li.current-menu-item:nth-child(3n+1) a:link,
-.site-header nav ul li.current-menu-item:nth-child(3n+1) a:visited {
-    color: white;
-    background: #C14242; 
-}
-
-/* Site Footer Menu */
-.site-footer nav ul li {
-    float: left;
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right: 1px dotted #BBB;
-}
-
-/* Page Layout */
-article.page h2 {
-    font-size: 200%;
-}
 
 /* Image Styles */
 img {
@@ -226,117 +115,72 @@ img {
 
 
 /* Media Queries */
-@media screen and (min-width: 770px) {
 
-    .mobile-nav {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 980px) {
-
-    .site-header nav ul li a:link,
-    .site-header nav ul li a:visited {
-        padding: 2.7em 2em;
-    }
+@media all and (max-width: 1000px) {
 
     div.container {
-        width: 90%;
+        width: 99%;
     }
+ 
+}
 
-    /* Edit single posts still */
-     body.home article.post:first-of-type {
-        margin-top: 9em;
-    }
+@media all and (max-width: 750px) {
 
-    body.single-post article.post {
-        padding: 20px;
-        margin-top: 6em;
-    }
-
-    body.home article.post {
-        padding: 0.5em 3em 1.5em;
-        margin-bottom: 1em;
-        margin-top: 1em;
+    body {
+        font: 135%/1.5 "Droid Serif", serif;
+        font-weight: 400;
+        margin: 0 auto;
+        color: #282828;
     }
 
 }
 
-@media screen and (max-width: 770px) {
+@media all and (max-width: 600px) {
 
-    .site-nav {
-        display: none;
-    }
-
-    .responsive-menu {
-        display: none;
-        width: 99%;
-        margin-top: 7.7em;
-    }
-
-    .mobile-nav ul li a {
-        /* give the individual elements style as if they were clicked; hide if input not check */
-        width: 99%;
-        display: inline-block;
-        color: white;
-        padding: 1em;
-        text-decoration: none;
-        text-transform: uppercase;
-        background-color: #2c2c2c;
-        font-weight: 800;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .mobile-nav ul li {
-        list-style: none;
-        padding-top: 2px;
-        width: 99%;
-    }
-
-    .mobile-nav ul {
+    body {
+        font: 110%/1.4 "Droid Serif", serif;
+        font-weight: 400;
         padding: 0;
     }
 
-    .menu-btn {
-        background: none;
-        border-radius: 15px;
-        border: solid;
-        outline: none;
-    }
-    
-    .menu-btn:hover {
-        box-shadow: 1px 1px 20px #95397A;
+    #name-tag {
+        padding: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
     }
 
-    .menu-btn:active {
-        background: #95397A;
+    .site-header h3 {
+        margin: 0;
+        font-size: 20px;
     }
 
-    .mobile-nav ul li:nth-child(1) a {
-        color: #95397A;
+    article.post {
+        padding: 1em;
     }
 
-    .mobile-nav ul li:nth-child(2) a {
-        color: #0092b7;
+    .site-nav ul li {
+        list-style: none;
+        font-size: 12px;
+        z-index: 300;
     }
 
-    .mobile-nav ul li:nth-child(3) a {
-        color: #C14242; 
-
-    }
-
-    .mobile-nav ul li a:hover {
+    .site-nav ul li a {
         color: white;
     }
 
-    body.single-post article.post {
-        padding: 20px;
-        margin-top: 6em;
+    .site-header {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #282828;
+        height: 2.1em;
     }
 
-    div.container {
-        width: 99%;
-    }    
+}
+
+@media all and (max-width: 350px) {
+    
+    .site-header h3 {
+        font-size: 14px;
+    }
 }

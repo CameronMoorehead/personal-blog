@@ -7,9 +7,6 @@ if (have_posts()) :
 
     <article class="post">
 
-
-
-
         <p class="post-info"><?php the_time('m/d/y'); ?></p>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
@@ -29,14 +26,9 @@ if (have_posts()) :
 
         } ?>
 
-            </article>
+    </article>
     
     <?php endwhile; ?>
-
-        <div class="pnavigation">
-            <p class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></p>
-            <p class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></p>
-        </div> 
 
     <?php else :
         echo '<p>No content found</p>';
