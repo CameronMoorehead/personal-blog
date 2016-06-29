@@ -147,7 +147,11 @@ img {
 
     .site-header h3 {
         margin: 0;
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    .site-header h2 a {
+        font-size: 16px;
     }
 
     article.post {
@@ -179,14 +183,27 @@ img {
 
     .site-header {
         background-color: #282828;
-        height: 2.1em;
+        height: 2.5em;
     }
 
 }
 
-@media all and (max-width: 350px) {
-    
+@media all and (max-width: 450px) {
+
     .site-header h3 {
-        font-size: 14px;
+        font-size: 16px;
+        margin-top: 0.65em;
+    }
+    
+    .site-header h2 a {
+        font-size: 15px;
+    }
+
+    .site-nav ul li {
+        margin-right: 4%;
+    }
+
+    article.post {
+        padding: 0.5em;
     }
 }
