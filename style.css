@@ -48,6 +48,16 @@ body.home article.post {
     border-bottom: thin solid black;
 }
 
+.post-info {
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.post-title {
+    margin-top: 0;
+}
+
+
 /* Header */
 
 #name-tag {
@@ -104,9 +114,14 @@ body.home article.post {
     font-size: 24px;
 }
 
-/* !!!! change this for more specificity !!! */
 .site-header nav ul li a:hover {
-    background-color: #ECECEC;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+    border-bottom: 5px solid #2c2c2c;
 }
 
 
@@ -133,7 +148,7 @@ img {
 @media all and (max-width: 630px) {
 
     body {
-        font: 110%/1.4 "Droid Serif", serif;
+        font: 150%/1.4 "Droid Serif", serif;
         font-weight: 400;
         padding: 0;
     }
@@ -154,12 +169,17 @@ img {
         font-size: 16px;
     }
 
-    article.post {
-        padding: 1em;
+    article.post .post-title {
+        margin-bottom: 0.1em;
+    }
+
+    article.post p {
+        margin-top: 0.1em;
     }
 
     div.container {
         margin: 0;
+        padding: 1em;
     }
 
     .site-nav {
@@ -190,6 +210,10 @@ img {
 
 @media all and (max-width: 450px) {
 
+    body {
+        font: 125%/1.4 "Droid Serif", serif;
+    }
+
     .site-header h3 {
         font-size: 16px;
         margin-top: 0.65em;
@@ -203,7 +227,4 @@ img {
         margin-right: 4%;
     }
 
-    article.post {
-        padding: 0.5em;
-    }
 }
