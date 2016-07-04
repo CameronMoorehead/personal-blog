@@ -12,11 +12,12 @@
     <!-- site-header -->
     <header class="site-header">
 
-        <h3 id="name-tag">
-            <a href="<?php echo home_url(); ?>">
-                Cameron<br>Moorehead
-            </a>
-        </h3>
+
+        <a href="<?php echo home_url(); ?>">
+            <h3 id="name-tag">
+                    Cameron<br>Moorehead
+            </h3>
+        </a>
 
         <nav class="site-nav">
 

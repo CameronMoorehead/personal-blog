@@ -5,7 +5,7 @@ Author URI: http://www.cameronmoorehead.com
 Version: 1.0
 */
 
-
+/* -- Base Styles -- */
 
 body {
     font: 150%/1.6 "Droid Serif", serif;
@@ -13,6 +13,7 @@ body {
     padding: 1em;
     margin: 0 auto;
     color: #282828;
+    background-color: white;
 }
 
 
@@ -33,7 +34,7 @@ a {
     color: black;
 }
 
-/* General Layout */
+/* -- General Layout -- */
 
 div.container {
     max-width: 750px;
@@ -42,33 +43,14 @@ div.container {
     margin-top: 8em;
 }
 
-/* -- Main Blog Feed Styles -- */
-
-body.home article.post {
-    border-bottom: thin solid black;
-}
-
-.post-info {
-    opacity: 0.8;
-    margin-bottom: 0;
-}
-
-.post-title {
-    margin-top: 0;
-}
-
-
 /* Header */
 
 #name-tag {
-    height: 6.5em;
+    height: 7.5em;
     width: 6em;
-    background-color: #282828;
+    background-color: #2c2c2c;
     padding: 0.5em;
     position: absolute;
-}
-
-#name-tag a {
     color: white;
 }
 
@@ -87,6 +69,15 @@ body.home article.post {
 
 .site-footer {
     margin-top: 30px;
+    background-color: #2c2c2c;
+    width: 100%;
+    color: white;
+    left: 0px;
+    position: absolute;
+}
+
+.footer-content {
+    padding-left: 1em;
 }
 
 /* Navigation Menus */
@@ -101,14 +92,11 @@ body.home article.post {
     padding: 0;
 }
 
-
 .site-nav ul li {
     list-style: none;
     display: inline;
     margin-right: 8%;
 }
-
-
 
 .site-nav h2 {
     font-size: 24px;
@@ -124,15 +112,35 @@ body.home article.post {
     border-bottom: 5px solid #2c2c2c;
 }
 
+.single nav ul li:first-of-type a {
+    border-bottom: 5px solid #2c2c2c;
+}
+
+
+/* Blog Post Styles */
+
+body.home article.post {
+    border-bottom: thin solid black;
+}
+
+.post-info {
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.post-title {
+    margin-top: 0;
+}
+
 
 /* Image Styles */
+
 img {
     max-width: 100%;
 }
 
 
-
-/* Media Queries */
+/* -- Media Queries -- */
 
 @media all and (max-width: 750px) {
 
@@ -202,8 +210,17 @@ img {
     }
 
     .site-header {
-        background-color: #282828;
+        background-color: #2c2c2c;
         height: 2.5em;
+    }
+
+    .site-header nav ul li.current-menu-item a:link,
+    .site-header nav ul li.current-menu-item a:visited {
+        border-bottom: 2px solid white;
+    }
+
+    .single nav ul li:first-of-type a {
+        border-bottom: 2px solid white
     }
 
 }

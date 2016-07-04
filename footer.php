@@ -1,3 +1,4 @@
+</div>
 <footer class="site-footer">
 
     <nav class="site-nav clearfix">
@@ -15,11 +16,11 @@
     </nav>            
 
 
-    <p><?php bloginfo('name'); ?> - &copy; <?php echo date("Y"); ?></p>
+    <p class="footer-content"><?php bloginfo('name'); ?> - &copy; <?php echo date("Y"); ?></p>
 
 </footer>
 
-</div><! -- container -->
+<! -- container -->
 
 <?php wp_footer(); ?>
 </body>
