@@ -44,3 +44,15 @@ function blog_setup() {
 
 add_action('after_setup_theme', 'blog_setup');
 
+function add_prism() {
+
+    wp_register_style('prismCSS', get_stylesheet_directory_uri() . '/prism.css');
+
+    wp_register_script('prismJS', get_stylesheet_directory_uri() . '/prism.js');
+
+    wp_enqueue_style('prismCSS');
+    wp_enqueue_script('prismJS');
+
+}
+
+add_action('wp_enqueue_scripts', 'add_prism');

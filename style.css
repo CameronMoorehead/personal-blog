@@ -34,6 +34,7 @@ a {
     color: black;
 }
 
+
 /* -- General Layout -- */
 
 div.container {
@@ -42,6 +43,7 @@ div.container {
     background-color: white;
     margin-top: 8em;
 }
+
 
 /* Header */
 
@@ -79,6 +81,7 @@ div.container {
 .footer-content {
     padding-left: 1em;
 }
+
 
 /* Navigation Menus */
 
