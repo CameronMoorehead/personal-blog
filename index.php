@@ -2,6 +2,7 @@
 
 get_header();
 
+query_posts(array('category_name' => 'blog-post'));
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
 

@@ -8,10 +8,14 @@ if (have_posts()) :
     <article class="post page">
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
+
+        <?php if (is_page("portfolio")) { ?>
+            Testing
+        <?php }?>
+
     </article>
     
     <?php endwhile; ?>
-
 
     <?php else : ?>
         echo '<p>No content found</p>';
