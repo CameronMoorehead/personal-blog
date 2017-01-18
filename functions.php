@@ -18,7 +18,7 @@ function load_fonts() {
 
 add_action('wp_print_styles', 'load_fonts');
 
-// Customize excerpt word count lenght
+// Customize excerpt word count length
 function custom_excerpt_length() {
     return 100;
 }
@@ -56,3 +56,19 @@ function add_prism() {
 }
 
 add_action('wp_enqueue_scripts', 'add_prism');
+
+// Set .current-menu-item for underlining
+function be_menu_item_classes( $classes, $item, $args ) {
+
+    echo '<script>console.log("test")</script>';
+
+    if (is_category('portfolio-post')) {
+        $classes[] = 'current-menu-item';
+    }
+
+    return $classes;
+}
+
+add_filter('nav_menu_css_class', 'be_menu_item_classes', 10, 3);
+
+// Custom post type
