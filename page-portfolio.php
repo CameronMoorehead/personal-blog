@@ -20,7 +20,7 @@ if (have_posts()) :
 
 <?php 
 
-query_posts(array('category_name' => 'portfolio-post'));
+query_posts(array('post_type' => 'portfolio'));
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
 
@@ -28,7 +28,7 @@ if (have_posts()) :
 
         <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         
-        <?php the_post_thumbnail('small-thumbnail'); ?>
+        <?php the_post_thumbnail('small-thumbnail', array('class' => 'alignleft')); ?>
 
         <?php if ($post->post_excerpt) { ?>
 

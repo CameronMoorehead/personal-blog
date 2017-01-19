@@ -44,6 +44,25 @@ function blog_setup() {
 
 add_action('after_setup_theme', 'blog_setup');
 
+// Custom post type
+function create_post_type() {
+    register_post_type('portfolio',
+        array(
+            'labels' => array(
+                'name' => __('Projects'),
+                'singular_name' => __('Project')
+            ),
+        'public' => true,
+        'menu_position' => 5,
+        'taxonomies' => array('category'),
+        'rewrite' => array('slug' => 'projects'),
+        'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
+        )
+    );
+}
+
+add_action('init', 'create_post_type');
+
 function add_prism() {
 
     wp_register_style('prismCSS', get_stylesheet_directory_uri() . '/prism.css');
@@ -57,18 +76,3 @@ function add_prism() {
 
 add_action('wp_enqueue_scripts', 'add_prism');
 
-// Set .current-menu-item for underlining
-function be_menu_item_classes( $classes, $item, $args ) {
-
-    echo '<script>console.log("test")</script>';
-
-    if (is_category('portfolio-post')) {
-        $classes[] = 'current-menu-item';
-    }
-
-    return $classes;
-}
-
-add_filter('nav_menu_css_class', 'be_menu_item_classes', 10, 3);
-
-// Custom post type

@@ -141,6 +141,10 @@ body.home article.post {
 img {
     max-width: 100%;
 }
+.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
 
 
 /* -- Media Queries -- */
