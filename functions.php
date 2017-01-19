@@ -63,6 +63,7 @@ function create_post_type() {
 
 add_action('init', 'create_post_type');
 
+// Syntax Highlighter for code
 function add_prism() {
 
     wp_register_style('prismCSS', get_stylesheet_directory_uri() . '/prism.css');
@@ -76,3 +77,15 @@ function add_prism() {
 
 add_action('wp_enqueue_scripts', 'add_prism');
 
+// Apply underlining to active website section
+function add_custom_classes($classes, $item) {
+    if (has_category('portfolio-post') && $item->title == 'Portfolio') {
+        $classes[] = 'current-menu-item';
+    }
+    if (has_category('blog-post') && $item->title == 'Blog') {
+        $classes[] = 'current-menu-item';
+    }
+    return array_unique($classes);
+}
+
+add_filter('nav_menu_css_class', 'add_custom_classes', 10, 2);
