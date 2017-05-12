@@ -1,9 +1,10 @@
+<!-- /site content-->
 </div>
 <footer class="site-footer">
 
-    <nav class="site-nav clearfix">
+    <nav>
 
-        <?php 
+        <?php
 
             $args = array(
                 'theme_location' => 'footer'
@@ -13,10 +14,10 @@
 
         <?php wp_nav_menu( $args); ?>
 
-    </nav>            
+    </nav>
 
 
-    <p class="footer-content"><?php bloginfo('name'); ?> - &copy; <?php echo date("Y"); ?></p>
+    <h3 class="footer-content"><?php bloginfo('name'); ?> - &copy; <?php echo date("Y"); ?></h3>
 
 </footer>
 

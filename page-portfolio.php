@@ -8,7 +8,7 @@ get_header();
 
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
-    
+
     <article class="post page">
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
@@ -18,7 +18,7 @@ if (have_posts()) :
         echo '<p>No content found</p>';
     <?php endif; ?>
 
-<?php 
+<?php
 
 query_posts(array('post_type' => 'portfolio'));
 if (have_posts()) :
@@ -27,7 +27,7 @@ if (have_posts()) :
     <article class="portfolio">
 
         <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        
+
         <?php the_post_thumbnail('small-thumbnail', array('class' => 'alignleft')); ?>
 
         <?php if ($post->post_excerpt) { ?>
@@ -39,7 +39,7 @@ if (have_posts()) :
 
         <?php } else {
 
-        the_content(); 
+        the_content();
 
         } ?>
 
