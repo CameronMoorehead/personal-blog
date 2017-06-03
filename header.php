@@ -29,12 +29,16 @@
     </nav>
 
     <div class="icon-group">
-      <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter-square"></i></a>
+      <a href="https://twitter.com/cscottmoorehead" target="_blank"><i class="fa fa-twitter-square"></i></a>
       <a href="https://www.linkedin.com/in/cameron-moorehead-64a03182" target="_blank"><i class="fa fa-linkedin-square"></i></a>
       <a href="https://github.com/cameronmoorehead" target="_blank"><i class="fa fa-github-square"></i></a>
-      <i class="fa fa-envelope-square"></i>
+      <i class="contact fa fa-envelope-square"></i>
+    </div>
+    <div id="contact-modal">
+      <h2>Contact</h2>
+      <?php echo do_shortcode( '[pirate_forms]' ) ?>
+      <span id="contact-modal-exit">&times;</span>
     </div>
   </header>
 
-  <div class="container">
       <!-- /site-header -->

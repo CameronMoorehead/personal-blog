@@ -1,6 +1,8 @@
 <?php
-
 get_header();
+?>
+<div class="single-container">
+<?php
 
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
@@ -14,7 +16,7 @@ if (have_posts()) :
         <?php }?>
 
     </article>
-    
+
     <?php endwhile; ?>
 
     <?php else : ?>

@@ -1,6 +1,8 @@
 <?php
-
-get_header();
+  get_header();
+?>
+<div class="container">
+<?php
 
 // query_posts(array('category_name' => 'blog-post'));
 if (have_posts()) :
