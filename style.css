@@ -331,7 +331,7 @@ div.single-container {
   }
   .site-nav h2 ul {
     margin-top: 0em;
-    font-size: 40px;
+    font-size: 35px;
   }
   .icon-group {
     display: none;
@@ -377,6 +377,9 @@ div.single-container {
   .site-nav h2 ul {
     padding-left: 0.4em;
   }
+  .site-nav h2 ul {
+    font-size: 28px;
+  }
 }
 @media all and (max-width: 455px) {
   .site-header {
@@ -398,7 +401,10 @@ div.single-container {
   }
   .site-nav ul li {
     margin-right: 4%;
-    font-size: 6.4vw;
+    font-size: 5.4vw;
+  }
+  .post-title {
+    line-height: 1em;
   }
   .prev-next-container {
     font-size: 5vw;
