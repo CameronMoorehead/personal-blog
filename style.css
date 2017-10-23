@@ -30,7 +30,7 @@ a {
 }
 
 pre {
-  font-size: calc(12px + (26 - 12) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
   max-width: 100%;
 }
 
