@@ -168,6 +168,10 @@ div.single-container {
     width: 100%;
   }
 
+  .footer-content a {
+    color: white;
+  }
+
   /* Blog Post Styles */
   .post {
     background-color: white;
@@ -204,6 +208,7 @@ div.single-container {
     padding: 1em;
     column-width: auto;
     background-color: white;
+    word-wrap: break-word;
   }
 
   /* Previous and Next Buttons */
@@ -228,7 +233,9 @@ div.single-container {
 
   /* Image Styles */
   img {
+    width: auto;
     max-width: 100%;
+    height: auto;
   }
 
   .alignleft {
